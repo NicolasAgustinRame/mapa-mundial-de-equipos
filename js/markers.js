@@ -5,5 +5,8 @@ var markers = [
     L.marker([-31.4035, -64.206272], { icon: imagen4 }).bindPopup("Club Atlético Belgrano de Córdoba"),
     L.marker([-31.3837, -64.1803], { icon: imagen5 }).bindPopup("Instituto Central Córdoba"),
     L.marker([-32.913997, -60.674567], { icon: imagen6 }).bindPopup("Club Atlético Rosario Central"),
-    L.marker([-32.956056, -60.661444], { icon: imagen7 }).bindPopup("Club Atlético Newell's Old Boys")
+    L.marker([-32.956056, -60.661444], { icon: imagen7 }).bindPopup("Club Atlético Newell's Old Boys"),
+    L.marker([-31.405502, -64.239375], { icon: lasPalmas }).bindPopup("Club Atlético Las Palmas"),
+    L.marker([-31.38951, -64.143997], { icon: racingCordoba }).bindPopup("Club Atlético Racing"),
+
 ];

@@ -34,3 +34,16 @@ var imagen7 = new L.Icon({
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Escudo_del_Club_Atl%C3%A9tico_Newell%27s_Old_Boys_de_Rosario.svg/1200px-Escudo_del_Club_Atl%C3%A9tico_Newell%27s_Old_Boys_de_Rosario.svg.png',
     iconSize: [40, 50],
 })
+
+var lasPalmas = new L.Icon({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Las_Palmas.png/160px-Las_Palmas.png',
+    iconSize: [40, 50],
+})
+
+var racingCordoba = new L.Icon({
+    iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_del_Club_Racing_de_C%C3%B3rdoba.svg',
+    iconSize: [40, 50],
+})
+
+
+
