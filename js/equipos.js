@@ -1,7 +1,6 @@
 var boca = new L.Icon({
     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Escudo_del_Club_Atl%C3%A9tico_Boca_Juniors.svg/1200px-Escudo_del_Club_Atl%C3%A9tico_Boca_Juniors.svg.png',
     iconSize: [40, 50],
-
 })
 
 var river = new L.Icon({

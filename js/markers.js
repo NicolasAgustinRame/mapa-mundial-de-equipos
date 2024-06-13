@@ -1,4 +1,5 @@
-var markers = [
+function mostrarEquiposFutbol() {
+    var markers = [
     L.marker([-34.635611, -58.364791], { icon: boca }).bindPopup("Club Atlético Boca Juniors"),
     L.marker([-34.545278, -58.449722], { icon: river }).bindPopup("Club Atlético River Plate"),
     L.marker([-31.44896, -64.17565], { icon: talleres }).bindPopup("Club Atlético Talleres de Córdoba"),
@@ -28,5 +29,44 @@ var markers = [
     L.marker([-34.449333, -58.542219], { icon: tigre}).bindPopup("Club Atlético Tigre"),
     L.marker([-31.631853, -60.715867], { icon: union}).bindPopup("Club Atlético Unión"),
     L.marker([-34.635375, -58.520711], { icon: velez}).bindPopup("Club Atlético Vélez Sarsfield"),
-
 ];
+    markers.forEach(marker => marker.addTo(map));
+
+    map.on('zoomend', function () {
+        if (map.getZoom() >= 10) {
+            markers.forEach(marker => map.addLayer(marker));
+        } else {
+            markers.forEach(marker => map.removeLayer(marker));
+        }
+    });
+
+    if (map.getZoom() >= 10) {
+        markers.forEach(marker => map.addLayer(marker));
+    } else {
+        markers.forEach(marker => map.removeLayer(marker));
+    }
+}
+
+function mostrarEquiposBasquet() {
+    var markers = [
+        L.marker([-34.59107427061588, -60.95472021785666], { icon: argentinoJunin }).bindPopup("Club Atlético Argentino"),
+    ];
+
+    markers.forEach(function(marker) {
+        marker.addTo(map)
+    })
+
+    map.on('zoomend', function () {
+        if (map.getZoom() >= 10) {
+            markers.forEach(marker => map.addLayer(marker));
+        } else {
+            markers.forEach(marker => map.removeLayer(marker));
+        }
+    });
+
+    if (map.getZoom() >= 10) {
+        markers.forEach(marker => map.addLayer(marker));
+    } else {
+        markers.forEach(marker => map.removeLayer(marker));
+    }
+}
